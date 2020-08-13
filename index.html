@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156989283-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156989283-1');
+        gtag('set', 'allowAdFeatures', false);
+        gtag('set', 'anonymizeIp', true)
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>moneyclock.</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light justify-content-between" style="background-color: #eee6f3">
+        <a class="navbar-brand">moneyclock.</a>
+        <form class="form-inline">
+            <div class="nav-item dropdown">
+                <div class="nav-link dropdown-toggle" id="ddCurrency" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    $
+                </div>
+                <div class="dropdown-menu" aria-labelledby="ddCurrency">
+                    <button id="ddUSD" type="button" class="dropdown-item">$</button>
+                    <button id="ddEUR" type="button" class="dropdown-item">€</button>
+                </div>
+            </div>
+            <input id="moneyRate" class="form-control mr-sm-2" type="search" value="14.99" aria-label="moneyRate"
+                style="width: 5em;">
+            <button id="btnCurrency" class="btn btn-light my-2 my-sm-0" type="button">Set</button>
+        </form>
+    </nav>
+
+    <div id="container-counter">
+        <h1 id="time">00:00:00</h1>
+        <h2 id="money"><span id="spanCurrency">$</span><span id="moneyVal">0.00</span></h2>
+        <div class="btn-group btn-block btn-group-lg" role="group" aria-label="controls">
+            <button id='btnStart' class="btn btn-secondary disabled">start</button>
+            <button id='btnPause' class="btn btn-secondary disabled">pause</button>
+            <button id='btnReset' class="btn btn-secondary disabled">reset</button>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

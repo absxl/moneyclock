@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(232, 217, 243);
+}
+
+
+#container-counter {
+    background-color: rgb(238, 230, 243);
+    margin-top: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    top: 40%;
+    text-align: center;
+}
+
+#time {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+#money {
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+@media only screen and (min-width: 768px) {
+    #container-counter {
+        background-color: rgb(238, 230, 243);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: right;
+        border-color: rgb(75, 75, 75);
+        border-width: 1px;
+        border-radius: 30px;
+        border-style: solid;
+        padding: 60px
+    }
+
+    #time {
+        font-weight: bold;
+        font-size: 112px;
+    }
+
+    #money {
+        margin-right: 5px;
+        color: rgb(75, 75, 75);
+        font-weight: bold;
+        font-size: 56px;
+    }
+}
